@@ -5,8 +5,8 @@
 sudo dnf -y install oraclelinux-developer-release-el8 && sudo dnf -y install python36-oci-cli
 
 #生成oci cli配置文件
-sudo mkdir /root/.oci
-sudo bash -c 'cat << EOF > /root/.oci/config
+mkdir /home/opc/.oci
+bash -c 'cat << EOF > /home/opc/.oci/config
 [DEFAULT]
 user=ocid1.user.oc1..aaaaaaaa46c2mrkhtdj64uwfn6ojw5hc2onod5p4lfzamf7xvdymydd5itqa
 fingerprint=f8:92:a0:4e:08:1c:1f:df:0e:32:7c:75:41:03:52:c7
@@ -16,7 +16,7 @@ key_file=/home/opc/key.pem
 EOF'
 
 #生成密钥
-sudo cat << EOF > /home/opc/key.pem
+cat << EOF > /home/opc/key.pem
 -----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0ljWlhs76PBXU
 Oynutic97ObuON05hB+ZdDehfYzVGNRtRKbi72rut1jhgmTd2lkVI5DPvmB9zOv7
@@ -47,4 +47,4 @@ oUOFSwDcpZNe7Qfbus9qGrVM
 -----END PRIVATE KEY-----
 EOF
 
-sudo chmod 400 /home/opc/key.pem
+chmod 400 /home/opc/key.pem
