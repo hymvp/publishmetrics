@@ -8,7 +8,7 @@ CRON_SCHEDULE="* * * * *"
 echo "$CRON_SCHEDULE $SCRIPT" >> temp_crontab
 
 # 将临时文件中的内容导入到 crontab 中
-crontab -u $USER temp_crontab
+crontab temp_crontab
 
 # 删除临时文件
 rm temp_crontab
