@@ -42,4 +42,4 @@ cat << EOF > /home/opc/metrics.json
 ]
 EOF
 
-sudo oci monitoring metric-data post --metric-data file:///home/opc/metrics.json --endpoint https://telemetry-ingestion.us-ashburn-1.oraclecloud.com
+oci monitoring metric-data post --metric-data file:///home/opc/metrics.json --endpoint https://telemetry-ingestion.us-ashburn-1.oraclecloud.com
