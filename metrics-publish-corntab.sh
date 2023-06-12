@@ -41,5 +41,5 @@ cat << EOF > /home/opc/metrics.json
    
 ]
 EOF
-
+#metric推送到monitoring，注意修改成对应的endpoint。
 sudo oci monitoring metric-data post --metric-data file:///home/opc/metrics.json --endpoint https://telemetry-ingestion.us-ashburn-1.oraclecloud.com
