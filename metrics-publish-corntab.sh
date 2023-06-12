@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #以下脚本放到crontab中，一分钟执行一次
-#生成环境变量
+#生成环境变量，时间戳，实例名，实例id，隔间
 time=$(date -u +%Y-%m-%dT%H:%M:%S+00:00)
 instanceName=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.displayName')
 instanceId=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.id')
