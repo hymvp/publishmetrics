@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#注意python环境是否有冲突
+#注意python环境是否有冲突，oci-cli是基于python3.6实现
 #安装oci cli
 sudo dnf -y install oraclelinux-developer-release-el8 && sudo dnf -y install python36-oci-cli
 
