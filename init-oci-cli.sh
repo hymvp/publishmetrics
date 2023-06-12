@@ -4,7 +4,7 @@
 #安装oci cli
 sudo dnf -y install oraclelinux-developer-release-el8 && sudo dnf -y install python36-oci-cli
 
-#生成oci cli配置文件
+#生成oci cli配置文件，首先在oci console上生成api key
 sudo mkdir /root/.oci
 sudo bash -c 'cat << EOF > /root/.oci/config
 [DEFAULT]
