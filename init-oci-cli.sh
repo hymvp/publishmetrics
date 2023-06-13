@@ -47,4 +47,5 @@ oUOFSwDcpZNe7Qfbus9qGrVM
 -----END PRIVATE KEY-----
 EOF
 
+#修改key的权限
 chmod 400 /home/opc/key.pem
