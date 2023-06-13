@@ -8,9 +8,9 @@ sudo dnf -y install oraclelinux-developer-release-el8 && sudo dnf -y install pyt
 sudo mkdir /root/.oci
 sudo bash -c 'cat << EOF > /root/.oci/config
 [DEFAULT]
-user=ocid1.user.oc1..aaaaaaaa46c2mrkhtdj64uwfn6ojw5hc2onod5p4lfzamf7xvdymydd5itqa
-fingerprint=f8:92:a0:4e:08:1c:1f:df:0e:32:7c:75:41:03:52:c7
-tenancy=ocid1.tenancy.oc1..aaaaaaaaro7aox2fclu4urtpgsbacnrmjv46e7n4fw3sc2wbq24l7dzf3kba
+user=ocid1.user.oc1..aaaaaaaa46c2mrkhtdj64uwfn6ojw5hc2onod5p4lfzamf7xvdymydd5itq
+fingerprint=f8:92:a0:4e:08:1c:1f:df:0e:32:7c:75:41:03:52:c
+tenancy=ocid1.tenancy.oc1..aaaaaaaaro7aox2fclu4urtpgsbacnrmjv46e7n4fw3sc2wbq24l7dzf3kb
 region=us-ashburn-1
 key_file=/home/opc/key.pem
 EOF'
@@ -43,7 +43,7 @@ lcl+vlvBvJ+PFkcBpblPZG8hZXfei8qEyN3pyykJWFOM8lfUq7JdIhZKSN5yI5o6
 StG+xnGVNmaQ/NDX3NI0ZRZlHFmU6NqiFU/Eq9uBAoGBANSkeg3w7n3rLQZKThGd
 ynIa6817FFIQHVj3GQMi3+DbxX7KwsGdUupeG73pMIudjvemP2ct3Y02AEE2s9uX
 39A1BpjlcTXNKV5SzogmvVdiPWAAfCjleAnVwwBGDUBwNa1fFMkvvtH5ZJ3hsgRP
-oUOFSwDcpZNe7Qfbus9qGrVM
+oUOFSwDcpZNe7Qfbus9qGr
 -----END PRIVATE KEY-----
 EOF
 
