@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置要执行的脚本和定时规则
-SCRIPT="sh /home/opc/publishmetrics/metrics-publish-corntab.sh"
+SCRIPT="sh /home/opc/publishmetrics/metrics-publish-crontab.sh"
 CRON_SCHEDULE="* * * * *"
 
 # 将新的定时任务添加到临时文件中
