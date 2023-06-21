@@ -8,8 +8,8 @@ instanceId=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.id')
 compartmentId=$(curl -s -L http://169.254.169.254/opc/v1/instance/ | jq -r '.compartmentId')
 
 #判断gpu是否正常，正常1，否则0
-nvidia-smi="$(command -v nvidia-smi || true)"
-if [[ ! "$nvidia-smi" ]] ; then 
+NVIDIA_SMI="$(command -v nvidia-smi || true)"
+if [[ ! "$NVIDIA_SMI" ]] ; then 
 echo 'nvidia-smi utility not found. Probably driver is not installed.'; 
   status=0
 else
