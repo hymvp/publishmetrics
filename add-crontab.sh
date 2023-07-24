@@ -10,5 +10,5 @@ echo "$CRON_SCHEDULE $SCRIPT" >> temp_crontab
 # 将临时文件中的内容导入到 crontab 中
 crontab temp_crontab
 
-# 删除临时文件
+# 删除临时文件-test
 rm temp_crontab
